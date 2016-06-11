@@ -1,0 +1,170 @@
+<div class="padding-content">
+    <div class="container">
+        <h3><strong>Plan a Trip Now</strong></h3><br>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="country"><span class="glyphicon glyphicon-map-marker"></span> Enter your Destination</label>
+                    <input type="text" class="form-control" id="country" placeholder="Country">
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label for="date"><span class="glyphicon glyphicon-calendar"></span> Enter your Destination</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+            </div>     
+            <div class="col-sm-3">
+                <div class="form-group">
+                    <label for="duration"><span class="glyphicon glyphicon-time"></span> Enter your Destination</label>
+                    <input type="number" min=1 class="form-control" id="duration">
+                </div>
+            </div>     
+        </div>
+
+        <div class="form-group">
+            <label>Choose Your Travel Type</label><br>
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Family
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Cultural
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Outdoor
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Shopping
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Adventure
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Choose Your Intensity</label><br>
+            <div class="btn-group" data-toggle="buttons">            
+                <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Easy
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Moderate
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Hard
+                </label>
+            </div>
+        </div>    
+
+        <div class="form-group">
+            <label>Choose Your Budget</label><br>
+            <div class="btn-group" data-toggle="buttons">            
+                <label class="btn btn-default active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Cheap
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Moderate
+                </label>
+                <label class="btn btn-default">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Luxury
+                </label>
+            </div>
+        </div>
+       
+        <div class="button-plan">
+            <button class="btn btn-primary btn-lg pull-right"><a ui-sref="explorer">Start Plan</a></button>
+        </div>
+    
+    </div>
+      
+</div>
+
+<div class="padding-content bacground-blue">
+    <div class="container">
+        <div class="title">
+            <h3>LATEST PLANS</h3>
+        </div>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="row image-plan">
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item ">
+                <div class="row image-plan">
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item ">
+                <div class="row image-plan">
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="images/img.jpg" width="100%">
+                        <div class="hover-image">SINGAPORE</div>
+                    </div>
+                </div>
+            </div>
+
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>

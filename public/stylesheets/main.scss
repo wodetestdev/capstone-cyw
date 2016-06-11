@@ -1,0 +1,707 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+
+//colors
+$white: #fff;
+$black: #000;
+$color_sky_blue_approx: #6dcff6;
+$color_mine_shaft_approx: #333;
+$color_gray_nurse_approx: #e8e8e8;
+$color_regent_st_blue_approx: #a1d1ed;
+$black_50: rgba(0, 0, 0, 0.5);
+$color_carnation_approx: #ff5959;
+$color_shakespeare_approx: #5cb5d8;
+$color_celeste_approx: #ccc;
+$color_geyser_approx: #d6dae0;
+$color_alto_approx: #ddd;
+$color_porcelain_approx: #f0f2f5;
+$color_picton_blue_approx: #4fc1e9;
+$color_bombay_approx: #b3b8bc;
+$color_cornflower_blue_approx: #5d9cec;
+
+//fonts
+$font_0: Myriad Pro;
+$font_1: Helvetica;
+$font_2: sans-serif;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: $white;
+  color: $black;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: $font_0, $font_1, $font_2;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+a {
+  color: $black;
+  text-decoration: none;
+  &:hover {
+    color: $black;
+    text-decoration: none;
+  }
+}
+li {
+  list-style: none outside none;
+}
+ul {
+  margin: 0;
+}
+img {
+  border: 0 none;
+}
+.clear {
+  clear: both;
+}
+.container {
+  position: relative;
+  width: 960px;
+}
+.header {
+  position: relative;
+  background: $color_sky_blue_approx;
+  padding: 15px;
+}
+.logo {
+  float: left;
+  margin-top: 10px;
+  h3 {
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+.right-header {
+  float: right;
+  position: relative;
+  ul {
+    float: left;
+    &.menu-margin {
+      margin-right: 50px;
+    }
+    li {
+      float: left;
+      a {
+        padding: 5px 10px;
+        display: block;
+        &.active {
+          background: $white;
+          border: 1px solid $color_mine_shaft_approx;
+          //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+.padding-content {
+  padding: 30px 0;
+}
+label {
+  font-weight: normal;
+}
+.title {
+  background: url('../images/line.png') no-repeat center bottom;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  h3 {
+    margin: 0;
+  }
+}
+.bacground-grey {
+  background: $color_gray_nurse_approx;
+}
+.btn {
+  border: 1px solid $color_mine_shaft_approx;
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 7px;
+}
+.input-group-no {
+  border: 1px solid $color_mine_shaft_approx;
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 7px;
+  .input-group-addon {
+    background: none;
+    border: 0;
+  }
+  .form-control {
+    border: 0;
+  }
+}
+.form-control {
+  border: 1px solid $color_mine_shaft_approx;
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 7px;
+}
+.bacground-blue {
+  background: $color_regent_st_blue_approx;
+}
+.hover-image {
+  background: $black_50;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: $white;
+  font-size: 20px;
+  text-align: center;
+  display: table-cell;
+  line-height: 230px;
+  display: none;
+}
+.carousel-control {
+  &.right {
+    width: auto;
+    right: -50px;
+    span {
+      font-size: 50px;
+    }
+  }
+  &.left {
+    width: auto;
+    left: -70px;
+    span {
+      font-size: 50px;
+    }
+  }
+}
+.img-user {
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 50%;
+  border: 1px solid $color_carnation_approx;
+  width: 200px;
+  height: 200px;
+}
+.place {
+  i {
+    color: $white;
+  }
+  img {
+    border: 2px solid $color_mine_shaft_approx;
+    //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+    border-radius: 7px;
+    width: 100%;
+  }
+}
+.contact-us {
+  .form-control {
+    margin-bottom: 10px;
+    height: 40px;
+  }
+  textarea.form-control {
+    height: 150px;
+  }
+}
+.contact-info {
+  margin-top: 135px;
+  div {
+    margin-top: 10px;
+  }
+}
+.footer {
+  background: $color_regent_st_blue_approx;
+  padding: 20px;
+  text-align: center;
+}
+.btn-primary {
+  background: $color_sky_blue_approx;
+  border: 0;
+  &:hover {
+    background: $color_shakespeare_approx;
+  }
+  &:focus {
+    background: $color_shakespeare_approx;
+  }
+}
+.button-plan {
+  margin-top: 216px;
+}
+.btn-full {
+  display: table;
+  width: 100%;
+  .btn {
+    display: table-cell;
+    width: 20%;
+    float: none;
+  }
+}
+.box-sign-in {
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 300px;
+  padding: 20px;
+  background: $white;
+  //Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  box-shadow: 0 2px 13px 0 $color_celeste_approx;
+  z-index: 1000;
+  display: none;
+  h4 {
+    color: $color_geyser_approx;
+  }
+  .input-group-no {
+    border: 1px solid $color_alto_approx;
+    height: 40px;
+    overflow: hidden;
+    .input-group-addon {
+      background: $color_porcelain_approx;
+    }
+  }
+  .input-group-active {
+    border: 1px solid $color_picton_blue_approx;
+  }
+  a {
+    color: $color_bombay_approx;
+  }
+}
+.button-face {
+  padding: 10px 20px;
+  background: $color_cornflower_blue_approx;
+  color: $white !important;
+  font-size: 16px;
+  display: block;
+  i {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+}
+.input-group-quanlity .input-group-addon {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.image-plan .col-sm-6 {
+  margin-bottom: 10px;
+  &:hover .hover-image {
+    display: block;
+  }
+}
+.social a:hover {
+  opacity: 0.5;
+}
+.bottom-place span {
+  margin-right: 20px;
+  display: inline-block;
+}
+.a-account img {
+  width: 50px;
+  height: 50px;
+  //Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+  border-radius: 50px;
+  border: 1px solid $color_alto_approx;
+  padding: 5px;
+}
+.panel-footer .btn {
+  width: 100px;
+}
+
+.header-account {
+    background: #fff;
+    padding:20px;
+    display: table;
+    width: 100%;
+}
+.logo-account {
+    float: left;
+}
+.search {
+    float: left;
+    background: #eceaea;
+    border-radius:20px;
+    padding: 5px;
+    position: relative;
+    margin-left: 20px;
+    width: 300px;
+}
+.search input {
+    width: 100%;
+    border: 0px;
+    height: 30px;
+    background: none;
+}
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 25px;
+    border: 0px;
+    background: none;
+}
+.menu-top {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.menu-top li {
+    float: left;
+    margin-left: 20px;
+}
+.menu-top li a {
+    color: #333;
+    display: block;
+}
+.button-wiz {
+    float: right;
+    margin-top: 10px;
+}
+.header-account .dropdown {
+    float: right;
+    margin-left: 20px;
+    border: 0px;
+}
+.header-account .dropdown-menu {
+    right: 0px;
+}
+.content-account {
+    padding: 20px;
+}
+.menu-left li a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+.panel-heading {
+    display: table;
+    width: 100%;
+    font-size: 30px;
+}
+.panel-heading  .right-heading {
+    float: right;
+}
+.panel-heading h3 {
+    float: left;
+    margin: 0px;
+}
+.line-location {
+    overflow: hidden;
+}
+.star {
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.button-location {
+    float: left;
+}
+.content-account .btn, .header-account .btn {
+    border-radius:20px;
+    background: #6498d2;
+}
+.list-location {
+    margin-top: 20px;
+}
+.list-location li {
+    position: relative;
+    border-bottom: 3px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.description {
+    padding: 10px;
+    box-shadow: 0px -1px 3px 1px #DDD;
+    margin-top: 10px;
+    width: 552px;
+}
+.wishlist {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.menu-mobile {
+    display: none;
+}
+.menu-mobile .a-toggle {
+    background: #ebebeb;
+    border-radius:7px;
+    padding: 10px;
+    display: block;
+    margin-top: 10px;
+}
+.menu-mobile .a-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 3px;
+    background: #333;
+}
+.menu-mobile .a-toggle .icon-bar:last-child {
+    margin: 0px;
+}
+.title-main {
+    overflow: hidden;
+    background: #fff;
+    padding: 10px 0px;
+    border-top:1px solid #ddd;
+}
+.tab {
+    float: left;
+    margin-top: 10px;
+}
+.tab {
+    margin-right: 5px;
+    display: inline-block;
+}
+.social-title-main {
+    float: right;
+}
+.social-title-main  img {
+    width: 40px;
+}
+.tabber-profile .nav-tabs {
+    background: #448ccb;
+    height: 430px;
+}
+.tabber-profile .nav-tabs > li {
+    float: none;
+}
+.tabber-profile .nav-tabs > li > a {
+    color: #fff;
+    font-size: 20px;
+    border-radius:0px;
+    margin: 0px;
+    border: 0px !important;
+    text-align: center;
+}
+.tabber-profile .nav-tabs > li > a:hover {
+    color: #333;
+}
+.tabber-profile .nav-tabs > li.active > a {
+    color: #333;
+
+}
+.title-list-friend {
+    border-bottom: 1px solid #ddd;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+.list-friend ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+.list-friend ul li .media-left img {
+    width: 70px;
+    border-radius:50%;
+    border: 1px solid #ddd;
+}
+.list-friend ul {
+    padding-bottom: 30px;
+}
+.list-friend ul li .address {
+    color: #cccccc;
+}
+.list-friend ul li .media-body {
+    vertical-align: middle;
+}
+.hc-frend {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.hc-frend img {
+    width: 40px;
+}
+.scroll-pane {
+    height: 330px;
+}
+.scroll-pane1 {
+    height: 352px;
+}
+.jspVerticalBar {
+    width:5px ;
+    background:none ;
+}
+.jspDrag {
+    background:#d7d8d9;
+    border-radius:7px 7px;
+}
+.jspTrack, .jspArrow.jspDisabled, .jspArrow {
+    background:none ;
+}
+.form-message {
+    margin-right: 15px;
+}
+.content-account .form-control {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+
+}
+.content-account .form-message .form-control {
+    height: 50px;
+}
+.content-account .form-message textarea.form-control {
+    height: 200px;
+}
+.rank-profile {
+    font-weight: bold;
+}
+.rank-profile .media-body {
+    vertical-align: middle;
+}
+.rank-profile table td {
+    padding: 7px;
+}
+.panel-primary .panel-heading i {
+    color: #fff;
+}
+.panel-primary .panel-heading .label-default {
+    background: #fdd899;
+    color: #333;
+}
+.panel-primary {
+    border: 0px;
+}
+.list-plans .box-plan img {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.list-plans .box-plan {
+    box-shadow: 0px 0px 10px 3px #ddd;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.bottom-plans {
+    background: #f3f3f4;
+    padding: 5px;
+    position: relative;
+    font-size: 15px;
+    color: #b4b3b3;
+}
+.bottom-plans a {
+    color: #b4b3b3;
+}
+.check-plan {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 25px;
+}
+
+.jspHorizontalBar {
+    display: none;
+}
+.list-conments ul {
+    padding: 0px;
+}
+.list-conments .media-heading a {
+    color: #333;
+    font-size: 14px;
+}
+.list-short .media-left img {
+    width: 70px;
+    height: 70px;
+}
+.list-short li {
+    margin-bottom: 15px;
+}
+.list-short li:last-child, .list-friend li:last-child {
+    margin: 0px;
+}
+.header-white {
+    display: table;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+.but-right {
+    float: right;
+
+}
+.but-right a {
+    color: #333;
+}
+.but-right i {
+    font-size: 30px ;
+    vertical-align: middle;
+}
+.social-profile {
+    text-align: center;
+}
+.social-profile img {
+    width: 50px;
+}
+.social-profile a {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.list-plans {
+    margin: 0px;
+    padding-bottom: 50px;
+}
+.example {
+    color: #adadad;
+}
+.example span {
+    color: #000000;
+}
+.form-profile .panel-heading {
+    border-bottom: 1px solid #ddd;
+}
+.form-profile  .btn-default {
+    background: none;
+    border: 0xp;
+}
